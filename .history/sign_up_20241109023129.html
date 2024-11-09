@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Registration Form</title>
+
+</head>
+<body>
+
+<div>
+    <h2>Bank Account Registration Form</h2>
+    <form action="#" method="post">
+        
+        <div>
+            <label for="account-type">Please specify the type of account you want to open:</label>
+            <select id="account-type" name="account_type" required>
+                <option value="">Please Select</option>
+                <option value="savings">Savings Account</option>
+                <option value="current">Current Account</option>
+                <option value="corporate">Corporate Account</option>
+            </select>
+        </div>
+        
+        <div>
+            <label>Currency:</label>
+            <label><input type="radio" name="currency" value="NGN" required> USD</label>
+            <label><input type="radio" name="currency" value="USD"> EUR</label>
+            <label><input type="radio" name="currency" value="EUR"> EUR</label>
+            <label><input type="radio" name="currency" value="POUNDS"> EUR</label>
+        </div>
+        
+        <div>
+            <label for="title">Name:</label>
+            <div class="inline"><input type="text" id="title" name="title" placeholder="Title"></div>
+            <div class="inline"><input type="text" name="first_name" placeholder="First" required></div>
+            <div class="inline"><input type="text" name="initials" placeholder="Initials"></div>
+            <div class="inline"><input type="text" name="middle_name" placeholder="Middle"></div>
+            <input type="text" name="last_name" placeholder="Last" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="###-###-####" required>
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div>
+            <label for="address">Mailing Home Address:</label>
+            <input type="text" id="address" name="address" placeholder="Street Address" required>
+            <div class="inline"><input type="text" name="city" placeholder="City" required></div>
+            <div class="inline"><input type="text" name="state" placeholder="State" required></div>
+            <div class="inline"><input type="text" name="postal_code" placeholder="Postal / Zip Code" required></div>
+            <input type="text" name="country" placeholder="Country" required>
+        </div>
+        
+        <div>
+            <label for="citizenship">Citizenship</label>
+            <input type="citizenship" id="citizenship" name="citizenship" required>
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div>
+            <label for="marital-status">Marital Status:</label>
+            <select id="marital-status" name="marital_status" required>
+                <option value="married">Married</option>
+                <option value="single">Single</option>
+                <option value="divorced">Divorced</option>
+                <option value="widowed">Widowed</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="language">Language:</label>
+            <input type="text" id="language" name="language" required>
+        </div>
+        <div>
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" required>
+        </div>
+        <div>
+            <label for="employer">Employer (Optional):</label>
+            <input type="text" id="employer" name="employer">
+        </div>
+        <div>
+            <label for="income">Monthly Income (Optional):</label>
+            <input type="text" id="income" name="monthly_income">
+        </div>
+        
+
+        <div>
+            <label for="nationality">Nationality (Optional):</label>
+            <input type="text" id="nationality" name="nationality">
+        </div>
+        <div>
+            <label>Are you applying for a joint account?</label>
+            <label><input type="radio" name="joint_account" value="yes"> Yes</label>
+            <label><input type="radio" name="joint_account" value="no"> No</label>
+        </div>
+
+        <div>
+            <label>ID Card</label>
+            <input type="file" accept="image/png, image/jpg, image/jpeg, image/webp, image/gif">
+            <label for="id-card">ID Card (Front)</label>
+        </div>
+        
+        <div>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms of service</a></label>
+        </div>
+
+
+        
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
